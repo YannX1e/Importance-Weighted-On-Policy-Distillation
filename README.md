@@ -1,4 +1,4 @@
-# IW-OPD (Importance-Weighted On-Policy Distillation)
+# IW-OPD (Importance Weighted On-Policy Distillation)
 
 <table>
   <tr>
