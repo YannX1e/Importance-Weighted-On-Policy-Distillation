@@ -1,15 +1,14 @@
 # IW-OPD (Importance Weighted On-Policy Distillation)
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="assets/intro_training_comparison-1.png" width="100%" alt="IW-OPD training comparison" />
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="assets/intro_pace_comparison-1.png" width="100%" alt="IW-OPD training pace comparison" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://yannx1e.github.io/IW-OPD/">Blog</a> |
+  <a href="https://arxiv.org/abs/2606.22600">Paper</a> |
+  <a href="https://huggingface.co/IW-OPD">Hugging Face</a>
+</p>
+
+<p align="center">
+  <img src="assets/on-position-bias-of-on-policy-distillation.png" width="100%" alt="On the Position Bias of On-Policy Distillation" />
+</p>
 
 This repository contains the training and evaluation code for **IW-OPD**: an importance-weighted variant of on-policy distillation that reweights token-level OPD advantages by cumulative teacher--student disagreement along the sampled response. The implementation is based on `verl` PPO training with on-policy student rollouts, teacher log-probability evaluation on the same trajectories, and a stop-gradient IW-OPD weight applied directly to the PPO advantage.
 
