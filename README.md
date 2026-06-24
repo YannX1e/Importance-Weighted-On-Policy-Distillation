@@ -1,14 +1,58 @@
-# IW-OPD (Importance Weighted On-Policy Distillation)
+<div align="center">
 
-<p align="center">
-  <a href="https://yannx1e.github.io/IW-OPD/">Blog</a> |
-  <a href="https://arxiv.org/abs/2606.22600">Paper</a> |
-  <a href="https://huggingface.co/IW-OPD">Hugging Face</a>
+<h1 style="font-family: Georgia; font-weight: 600; letter-spacing: 0.5px;">
+&#x2728; On the Position Bias of On-Policy Distillation &#x2728;
+</h1>
+<h3>IW-OPD: Importance Weighted On-Policy Distillation</h3>
+
+<br>
+
+<p style="font-family: Charter, serif; font-size: 15px; line-height: 1.6; color: #444;">
+<a href="https://yannx1e.github.io/" target="_blank"><b>Yan Xie</b></a><sup>*1</sup>,
+<b>Sijie Zhu</b><sup>*1</sup>,
+<a href="https://neilwen987.github.io/" target="_blank"><b>Tiansheng Wen</b></a><sup>2</sup>,
+<a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank"><b>Bo Chen</b></a><sup>1</sup>,
+<a href="https://yifeiwang77.com/" target="_blank"><b>Yifei Wang</b></a><sup>3</sup>
 </p>
 
-<p align="center">
-  <img src="assets/on-position-bias-of-on-policy-distillation.png" width="100%" alt="On the Position Bias of On-Policy Distillation" />
+<p style="font-size: 14px; color: #555; margin-top: 8px;">
+<sup>1</sup>Xidian University &emsp;
+<sup>2</sup>Georgia Institute of Technology &emsp;
+<sup>3</sup>Amazon AGI SF Lab
+<br>
+<sup>*</sup>Equal contribution
 </p>
+
+<p>
+  <a href="https://arxiv.org/abs/2606.22600">
+    <img src="https://img.shields.io/badge/ArXiv-2606.22600-B31B1B?style=flat-square&logo=arxiv" alt="Paper">
+  </a>
+  <a href="https://yannx1e.github.io/IW-OPD/">
+    <img src="https://img.shields.io/badge/Blog-Website-blue?style=flat-square&logo=googlechrome" alt="Blog">
+  </a>
+  <a href="https://huggingface.co/IW-OPD">
+    <img src="https://img.shields.io/badge/Hugging%20Face-IW--OPD-yellow?style=flat-square&logo=huggingface" alt="Hugging Face">
+  </a>
+  <a href="https://github.com/YannX1e/Importance-Weighted-On-Policy-Distillation">
+    <img src="https://img.shields.io/badge/Code-GitHub-black?style=flat-square&logo=github" alt="Code">
+  </a>
+</p>
+
+<img src="./assets/on-position-bias-of-on-policy-distillation.png" width="850" style="border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.15);" alt="On the Position Bias of On-Policy Distillation">
+
+<br>
+<br>
+
+<p style="font-size: 15px; color: #444;">
+This is the <b>official repository</b> for <b>IW-OPD</b>.
+</p>
+
+</div>
+
+## &#x1F680; &#x1F680; News
+- 2026.06.24 Code released!
+- 2026.06.21 Paper released on arXiv.
+- 2026.06.17 Blog released.
 
 This repository contains the training and evaluation code for **IW-OPD**: an importance-weighted variant of on-policy distillation that reweights token-level OPD advantages by cumulative teacher--student disagreement along the sampled response. The implementation is based on `verl` PPO training with on-policy student rollouts, teacher log-probability evaluation on the same trajectories, and a stop-gradient IW-OPD weight applied directly to the PPO advantage.
 
