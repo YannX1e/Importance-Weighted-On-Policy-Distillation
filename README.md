@@ -3,16 +3,18 @@
 <h1 style="font-family: Georgia; font-weight: 600; letter-spacing: 0.5px;">
 &#x2728; On the Position Bias of On-Policy Distillation &#x2728;
 </h1>
-<h3>IW-OPD: Importance Weighted On-Policy Distillation</h3>
+<h3 align="left" style="max-width: 850px; margin: 0 auto; font-weight: 500; line-height: 1.4; color: #444;">
+Analyzing position bias through the lens of constrained-optimization and reweighting OPD via prefix-importance.
+</h3>
 
 <br>
 
 <p style="font-family: Charter, serif; font-size: 15px; line-height: 1.6; color: #444;">
-<a href="https://yannx1e.github.io/" target="_blank"><b>Yan Xie</b></a><sup>*1</sup>,
+<b>Yan Xie</b><sup>*1</sup>,
 <b>Sijie Zhu</b><sup>*1</sup>,
-<a href="https://neilwen987.github.io/" target="_blank"><b>Tiansheng Wen</b></a><sup>2</sup>,
-<a href="https://web.xidian.edu.cn/bchen/en/index.html" target="_blank"><b>Bo Chen</b></a><sup>1</sup>,
-<a href="https://yifeiwang77.com/" target="_blank"><b>Yifei Wang</b></a><sup>3</sup>
+<b>Tiansheng Wen</b><sup>2</sup>,
+<b>Bo Chen</b><sup>1</sup>,
+<b>Yifei Wang</b><sup>3</sup>
 </p>
 
 <p style="font-size: 14px; color: #555; margin-top: 8px;">
@@ -43,16 +45,12 @@
 <br>
 <br>
 
-<p style="font-size: 15px; color: #444;">
-This is the <b>official repository</b> for <b>IW-OPD</b>.
-</p>
-
 </div>
 
 ## &#x1F680; &#x1F680; News
-- 2026.06.24 Code released!
-- 2026.06.21 Paper released on arXiv.
-- 2026.06.17 Blog released.
+- 2026.06.24 We release our code.
+- 2026.06.21 We release our paper on [arXiv](https://arxiv.org/abs/2606.22600).
+- 2026.06.17 We release our work in [blog](https://yannx1e.github.io/IW-OPD/).
 
 This repository contains the training and evaluation code for **IW-OPD**: an importance-weighted variant of on-policy distillation that reweights token-level OPD advantages by cumulative teacher--student disagreement along the sampled response. The implementation is based on `verl` PPO training with on-policy student rollouts, teacher log-probability evaluation on the same trajectories, and a stop-gradient IW-OPD weight applied directly to the PPO advantage.
 
