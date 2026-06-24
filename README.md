@@ -4,7 +4,7 @@
 &#x2728; On the Position Bias of On-Policy Distillation &#x2728;
 </h1>
 <h3 align="left" style="max-width: 850px; margin: 0 auto; font-weight: 500; line-height: 1.4; color: #444;">
-Analyzing position bias through the lens of constrained-optimization and reweighting OPD via prefix-importance.
+Analyzing position bias in On-Policy Distillation through the lens of constrained-optimization and reweighting OPD via prefix-importance.
 </h3>
 
 <br>
