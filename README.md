@@ -161,3 +161,19 @@ CUDA_VISIBLE_DEVICES=0 bash code_eval/scripts/run_evalplus.sh humaneval <MODEL_P
 ## Acknowledgments
 
 This codebase is built on top of [G-OPD](https://github.com/RUCBM/G-OPD) and `verl`. We thank the G-OPD authors for releasing their implementation and training data.
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@misc{xie2026positionbiasopd,
+  title={On the Position Bias of On-Policy Distillation},
+  author={Xie, Yan and Zhu, Sijie and Wen, Tiansheng and Chen, Bo and Wang, Yifei},
+  year={2026},
+  eprint={2606.22600},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2606.22600}
+}
+```
